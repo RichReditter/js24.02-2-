@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <p>text1</p>
+        </li>
+        <li>
+            <p class="small">text2</p>
+        </li>
+        <li>
+            <p class="text3">text3</p>
+        </li>
+        <li>
+            <p class="big">text4</p>
+        </li>
+        <li>
+            <p>text5</p>
+        </li>
+    </ul>
+
+    <div>
+        <div></div>
+        <div>
+            <div>
+                <div></div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+        <div></div>
+        <div>
+            <div></div>
+            <div>
+                <div></div>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+        <div></div>
+    </div>
+
+
+
+    <script> 
+        // Первое задание
+        const underlined = document.body.querySelector('.small');
+        const underlined2 = document.body.querySelector('.big');
+        underlined.style.textDecoration = 'underline';
+        underlined2.style.textDecoration = 'underline';
+        const text3 = document.body.querySelector('.text3');
+        text3.remove();
+
+
+        const p = document.body.querySelectorAll('p')
+        p.parentElement.classList.add('.item');
+        
+        
+        // Второе задание
+        const firstDiv = document.body.querySelector('div');
+
+
+
+    </script>
+</body>
+</html>
